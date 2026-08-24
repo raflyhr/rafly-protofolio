@@ -188,14 +188,17 @@ function CursorGrid({
       const rectangle = canvas.getBoundingClientRect()
       return [event.clientX - rectangle.left, event.clientY - rectangle.top]
     }
+    const insideCanvas = (x, y) => x >= 0 && x <= width && y >= 0 && y <= height
     const onPointerMove = event => {
       const [x, y] = pointerPosition(event)
+      if (!insideCanvas(x, y)) return
       energize(x, y)
       wake()
     }
     const onPointerDown = event => {
       if (!propsRef.current.clickPulse) return
       const [x, y] = pointerPosition(event)
+      if (!insideCanvas(x, y)) return
       pulses.push({ x, y, startedAt: performance.now() })
       wake()
     }
