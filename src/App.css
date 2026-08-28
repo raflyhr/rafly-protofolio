@@ -1791,7 +1791,8 @@ footer a:hover {
     background: rgba(7, 10, 22, 0.44);
   }
 
-  .pagination {
+.pagination {
+
     flex-wrap: wrap;
     justify-content: center;
   }
