@@ -35,6 +35,8 @@ const projects = [
 ]
 
 const credentials = [
+  ['Achievement', '2nd Place — ARCADIA Award 2026: Software Development', '/menang1.png', 'Awarded second place for developing NEORAIN, a personalized psychological assistant platform using Generative AI algorithms and the DASS-21 assessment instrument.'],
+  ['Achievement', 'Best Creative Concept — Hackathon Informatics Plus 2026', '/menang2.png', 'Recognized for creating Auto Rekrut, an innovative recruitment concept based on Outcome-Based Education (OBE) during the Informatics Plus 2026 hackathon.'],
   ['Course', 'Pengenalan ke Logika Pemrograman', '/sertif1.png', 'Mempelajari konsep dasar logika pemrograman untuk membangun solusi terstruktur.'],
   ['Course', 'Belajar Dasar AI', '/sertif2.png', 'Mempelajari konsep, peluang, dan penerapan dasar kecerdasan artifisial.'],
   ['Course', 'Belajar Fundamental Aplikasi Web dengan React', '/sertif3.png', 'Mempelajari dasar React untuk membangun aplikasi web interaktif.'],
