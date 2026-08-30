@@ -190,7 +190,7 @@ main {
   min-height: min(720px, calc(100vh - 140px));
   padding-top: 18px;
   transform: translateY(-34px);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .hero-copy,

@@ -106,9 +106,10 @@ function CursorGrid({
       lastFrame = now
       context.clearRect(0, 0, width, height)
       const [red, green, blue] = hexToRgb(props.color)
+      const baseGridOpacity = props.gridOpacity || 0.1
 
-      if (props.gridOpacity > 0) {
-        context.strokeStyle = `rgba(${red}, ${green}, ${blue}, ${props.gridOpacity})`
+      if (baseGridOpacity > 0) {
+        context.strokeStyle = `rgba(${red}, ${green}, ${blue}, ${baseGridOpacity})`
         context.lineWidth = 1
         context.beginPath()
         for (let column = 0; column <= columns; column += 1) {
